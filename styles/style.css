@@ -191,10 +191,8 @@ body {
 .about-header p {
   font-size: 18px;
 }
-.section-title {
-  font-size: 32px;
-}
-.about-title::after {
+
+.section-title::after {
   content: "";
   position: absolute;
   display: block;
@@ -203,6 +201,7 @@ body {
   background: #f13311;
   left: 0;
   margin-left: 20px;
+  font-size: 32px;
 }
 
 .about-container {
@@ -227,17 +226,11 @@ body {
   color: red;
 }
 
-table {
-    width: 100%;
-    text-align: center;
-  }
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-
+.tech-container {
+  padding: 0 12px;
+  width: 100%;
+  border: 1px solid red;
+}
 /* MEDIA QUERIES */
 
 /* Extra small devices (portrait phones, less than 576px) */
