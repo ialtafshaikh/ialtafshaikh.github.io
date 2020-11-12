@@ -283,11 +283,19 @@ body {
   padding: 0 12px;
 }
 
+.project-container .projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+
 .project-container .card {
   box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 20%;
+  width: 70%;
   border-radius: 5px;
+  margin: 20px auto;
 }
 
 .project-container .card:hover {
@@ -370,14 +378,38 @@ body {
     text-align: center;
   }
 
+  .project-container .projects{
+    grid-gap: 0px !important;
+    display: block;
+  }
+
+  .project-container .card {
+
+    width: 60% !important;
+
+  }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) { 
 
+  .project-container .projects{
+    grid-gap: 10px;
+  }
+  .project-container .card {
+
+    width: 75% !important;
+
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .project-container .card {
 
+    width: 75%;
+
+  }
+  
 }
