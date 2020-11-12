@@ -1,3 +1,8 @@
+/* 
+ *{
+    border: 1px solid red;
+    
+}  */
 body {
   margin: 0;
   font-family: "Roboto Mono", monospace;
@@ -47,6 +52,67 @@ body {
   height: 50px;
   margin-left: 3vw;
 }
+
+/* hamburger */
+#ham{
+  width: 45px;
+  height: 38px;
+  position: relative;
+  margin: 0 10px;
+  margin-top: 5px;
+  /* margin-right: 20px; */
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+
+#ham span{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transition: .25s ease-in-out;
+}
+
+#ham span:nth-child(1) {
+  top: 5px;
+}
+
+#ham span:nth-child(2),#ham span:nth-child(3) {
+  top: 18px;
+}
+
+#ham span:nth-child(4) {
+  top: 32px;
+}
+
+#ham:hover span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#ham:hover span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#ham:hover span:nth-child(3) {
+
+  transform: rotate(-45deg);
+}
+
+#ham:hover span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* //hamburger */
 
 .banner-container {
   width: 99.6%;
@@ -171,3 +237,77 @@ table {
     border: 1px solid black;
     border-collapse: collapse;
   }
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* .header-section{
+    width: 100%;
+  }  */
+  .social-icons .fa {
+    padding: 10px;
+  }
+
+  .banner p{
+    font-size: 5vw !important;
+  }
+
+  .social-icons{
+    margin-top: 6%;
+  } 
+  
+  .about-image img {
+    width: 28vw !important;
+  }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .navigation-container ul{
+    display: none !important;
+  }
+  #ham{
+    display: block;
+  }
+  .banner-heading{
+    font-size: 8vw !important;
+  }
+
+  .banner p{
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .social-icons{
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .arrow{
+    margin-top: 12%;
+    /* position: absolute; */
+  }
+  .about{
+    height: 100%;
+  }
+  .about-content p{
+    margin: 2px auto;
+    padding-left: 32px;
+  }
+  .about-content .title{
+    text-align: center;
+  }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
