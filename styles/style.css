@@ -357,6 +357,9 @@ footer .social-links a{
   .skills-container{
     display: block;
   }
+  .copy{
+    text-align: center;
+  }
 
 }
 
