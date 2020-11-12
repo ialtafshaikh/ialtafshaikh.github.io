@@ -226,10 +226,56 @@ body {
   color: red;
 }
 
+
+.skills-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+
 .tech-container {
   padding: 0 12px;
-  width: 100%;
-  border: 1px solid red;
+}
+
+.progress .val{
+  float: right;
+}
+.progress-wrap{
+  background-color: #ff9393;
+}
+
+.progress-bar{
+  background-color: #f05454;
+  height: 15px;
+  margin: 5px 0;
+}
+
+.progress-wrap .html{
+  width: 80%;
+}
+
+.progress-wrap .css{
+  width: 60%;
+}
+
+.progress-wrap .js{
+  width: 75%;
+}
+.progress-wrap .node{
+  width: 55%;
+}
+.progress-wrap .react{
+  width: 60%;
+}
+.progress-wrap .json{
+  width: 80%;
+}
+.progress-wrap .blockchain{
+  width: 80%;
+}
+.progress-wrap .python{
+  width: 90%;
 }
 /* MEDIA QUERIES */
 
@@ -252,6 +298,10 @@ body {
   
   .about-image img {
     width: 28vw !important;
+  }
+
+  .skills-container{
+    display: block;
   }
 
 }
