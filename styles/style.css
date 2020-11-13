@@ -3,6 +3,9 @@
     border: 1px solid red;
     
 }  */
+html{ 
+  scroll-behavior: smooth; 
+} 
 body {
   margin: 0;
   font-family: "Roboto Mono", monospace;
@@ -308,6 +311,11 @@ body {
 
 .project-container .card .card-content {
   padding: 2px 16px;
+}
+
+.card-title a{
+  text-decoration: none;
+  text-align: center;
 }
 
 footer{
